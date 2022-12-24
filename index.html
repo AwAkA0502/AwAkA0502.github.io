@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <audio autoplay loop>
+            <source src="atlas.mp3" type="audio/mp3"/>
+        </audio>
+        <img src="stars.png" id="stars">
+        <img src="text1.png" id="text1">
+        <img src="text2.png" id="text2">
+        <img src="tebing1.png" id="tebing1">
+        <a href="#sec" id="btn">ULTAH SIGN</a>
+        <img src="tebing2.png" id="tebing2">
+    </section>
+    <div class="hbd" id="hbd"><h2>HAPPY BIRTHDAY CAPOO</h2></div>
+    <div class="sec" id="sec">
+        <img src="sign.png" id="sign">
+    </div>
+    <div class="fotocantik">
+        <h1>FOTO PRINCESS</h1>
+    </div>
+    <div class="image-body">
+        <div class="slide-container">
+            <span class="slider-span" id="slider-span1"></span>
+            <span class="slider-span" id="slider-span2"></span>
+            <span class="slider-span" id="slider-span3"></span>
+            <span class="slider-span" id="slider-span4"></span>
+            <span class="slider-span" id="slider-span5"></span>
+            <span class="slider-span" id="slider-span6"></span>
+            <span class="slider-span" id="slider-span7"></span>
+            <span class="slider-span" id="slider-span8"></span>
+            <span class="slider-span" id="slider-span9"></span>
+            <span class="slider-span" id="slider-span10"></span>
+            <span class="slider-span" id="slider-span11"></span>
+            
+
+            <div class="image-slider">
+                <div class="slide-div" id="slide">
+                    <img src="foto cantik/photo1.png" alt="" class="img"
+                    id="img1">
+                    <a href="#slider-span1" class="button"
+                    id="button-1"></a>
+                </div>
+                <div class="slide-div" id="slide">
+                    <img src="foto cantik/photo2.png" alt="" class="img"
+                    id="img2">
+                    <a href="#slider-span2" class="button"
+                    id="button-2"></a>
+                </div>
+                <div class="slide-div" id="slide">
+                    <img src="foto cantik/photo3.png" alt="" class="img"
+                    id="img3">
+                    <a href="#slider-span3" class="button"
+                    id="button-3"></a>
+                </div>
+                <div class="slide-div" id="slide">
+                    <img src="foto cantik/photo4.png" alt="" class="img"
+                    id="img4">
+                    <a href="#slider-span4" class="button"
+                    id="button-4"></a>
+                </div>
+                <div class="slide-div" id="slide">
+                    <img src="foto cantik/photo5.png" alt="" class="img"
+                    id="img5">
+                    <a href="#slider-span5" class="button"
+                    id="button-5"></a>
+                </div>
+                <div class="slide-div" id="slide">
+                    <img src="foto cantik/photo6.png" alt="" class="img"
+                    id="img6">
+                    <a href="#slider-span6" class="button"
+                    id="button-6"></a>
+                </div>
+                <div class="slide-div" id="slide">
+                    <img src="foto cantik/photo7.png" alt="" class="img"
+                    id="img7">
+                    <a href="#slider-span7" class="button"
+                    id="button-7"></a>
+                </div>
+            </div>
+        </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let text1 = document.getElementById('text1');
+        let text2 = document.getElementById('text2');
+        let tebing1 = document.getElementById('tebing1');
+        let btn = document.getElementById('btn');
+        let tebing2 = document.getElementById('tebing2');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.top = value  * 0.55 + 'px'
+            tebing1.style.top = value  * 0.25 +'px'
+            tebing2.style.top = value  * 0.9 +'px'
+            text2.style.scaleX = value  * '100cm' + 'px'
+        })
+    </script>
+
+</body>
+</html>
